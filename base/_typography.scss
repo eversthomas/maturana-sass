@@ -4,12 +4,10 @@
 
 html {
   font-family: 'Titillium Web', sans-serif;
-  font-size: calc(12px + 0.5vw);
+  // base font-size in _reset.scss
 }
 
-body {
-  font-size: 1rem;
-}
+// body font-size in _reset.scss
 
 h1, h2, h3, h4, h5, h6, p {
   padding-top: 1rem;
@@ -17,31 +15,31 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, .h1 {
-  font-size: 3rem;
+  font-size: sizes(h1);
 }
 
 h2, .h2 {
-  font-size: 2.5rem;
+  font-size: sizes(h2);
 }
 
 h3, .h3 {
-  font-size: 2rem;
+  font-size: sizes(h3);
 }
 
 h4, .h4 {
-  font-size: 1.75rem;
+  font-size: sizes(h4);
 }
 
 h5, .h5 {
-  font-size: 1.5rem;
+  font-size: sizes(h5);
 }
 
 h6, .h6 {
-  font-size: 1.3rem;
+  font-size: sizes(h6);
 }
 
 p {
-  font-size: 1rem;
+  font-size:  sizes(p);
 }
 
 hr {
