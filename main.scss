@@ -1,0 +1,38 @@
+/*!
+Theme Name: _maturana
+Theme URI: https://processwire.end-linkage.de/
+Author: Thomas Evers
+Author URI: https://tomevers.de/
+Description: SCSS Boiler as a base for new sites
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: _maturana
+Tags: css reset, variables, mixins, kiss
+*/
+
+// abstracts
+@import 'abstracts/config';       // variables and mixins
+
+// base
+@import 'base/reset';
+@import 'base/typography';
+
+// layout
+@import 'layout/layouts';
+
+// module
+@import 'module/links';
+@import 'module/button';
+@import 'module/lists';
+@import 'module/forms';
+@import 'module/hamburger';
+@import 'module/navigation';
+@import 'module/hero';
+@import 'module/cards';
+@import 'module/screenreader';
+@import 'module/osano-cookie';
+@import 'module/helpers';
+
+// shame and vendors
+@import 'shame/vendor';
