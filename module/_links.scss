@@ -1,1 +1,13 @@
-//
+// ----------
+// Links
+// ----------
+
+a {
+  color: color(link-color);
+  transition: 1s;
+
+  &:hover {
+    cursor: pointer;
+    color: color(link-hover);
+  }
+}
