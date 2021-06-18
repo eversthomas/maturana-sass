@@ -98,10 +98,12 @@ In styles.min.css you see the minified compiled css file. Its at this time (2021
 
 ## example
 
-[processwire](https://process.end-linkage)
+[live example](https://process.end-linkage)
 
 It's a [processwire](https://processwire.com/) installation that run this sass boiler
 
 ## why maturana?
 
 ![Image of Maturana](https://github.com/eversthomas/maturana-2/blob/main/Humberto_Maturana.jpg)
+
+Humberto R. Maturana (September 14, 1928 – May 6, 2021) was a Chilean biologist and philosopher. Many consider him a member of a group of second-order cybernetics theoreticians such as Heinz von Foerster, Gordon Pask, Herbert Brün and Ernst von Glasersfeld. [wiki](https://en.wikipedia.org/wiki/Humberto_Maturana)
