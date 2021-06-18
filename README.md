@@ -94,4 +94,4 @@ $breakpoints: (
 
 ## css size
 
-In styles.min.css you see the minified compiled css file. Its an this time (2021-06-18) 13.8 KB big.
+In styles.min.css you see the minified compiled css file. Its at this time (2021-06-18) 13.8 KB big.
