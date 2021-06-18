@@ -14,16 +14,18 @@ main.scss
 │   └── typography - sizes based on the config file
 ├── layouts
 │   └── layout composition here
-└── modules
-    ├── button
-    ├── cards
-    ├── forms
-    ├── hamburger
-    ├── helpers.scss
-    ├── hero
-    ├── links
-    ├── lists
-    ├── navigation
-    ├── osano-cookie
-    └── screenreader.scss
+├── modules
+│   ├── links
+│   ├── button
+│   ├── lists
+│   ├── forms
+│   ├── hamburger
+│   ├── navigation
+│   ├── hero
+│   ├── cards
+│   ├── screenreader
+│   ├── osano-cookie
+│   └── helpers
+└── shame
+    └── vendors - for bootstrap or something like that
 ```
