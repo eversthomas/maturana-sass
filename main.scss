@@ -16,6 +16,7 @@ Tags: css reset, variables, mixins, kiss
 
 // base
 @import 'base/reset';           // normalize
+@inport 'base/fonts';
 @import 'base/typography';      // typography
 
 // layout
