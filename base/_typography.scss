@@ -82,6 +82,7 @@ p {
 }
 
 hr {
+  box-sizing: content-box; /* 1 */
   height: 0;
   overflow: visible;
   margin-top: 1rem;
