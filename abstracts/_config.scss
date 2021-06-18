@@ -5,6 +5,31 @@
 @charset 'utf-8';
 
 /**
+* font-sizes
+* use it: font-size: sizes(base-size);
+*/
+
+$sizes: (
+	base-size: 16px,
+	h1: 3rem,
+	h2: 2.5rem,
+	h3: 2rem,
+	h4: 1.75rem,
+	h5: 1.5rem,
+	h6: 1.3rem,
+	p: 1rem
+);
+
+// _functions.scss
+@function sizes($key) {
+	@if map-has-key($sizes, $key) {
+		@return map-get($sizes, $key);
+	}
+	@warn "Unknown `#{$key}` in $sizes.";
+	@return null;
+}
+
+/**
 * sass map for colors
 * use it: background: color(light);
 */
