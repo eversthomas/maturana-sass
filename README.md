@@ -92,4 +92,6 @@ $breakpoints: (
 // use it like this: @include respond-to('medium') {};
 ```
 
+## css size
 
+In styles.min.css you see the minified compiled css file. Its an this time (2021-06-18) 13.8 KB big.
