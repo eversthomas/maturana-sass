@@ -12,27 +12,27 @@ Tags: css reset, variables, mixins, kiss
 */
 
 // abstracts
-@import 'abstracts/config';       // variables and mixins
+@import 'abstracts/config';     // variables and mixins
 
 // base
-@import 'base/reset';
-@import 'base/typography';
+@import 'base/reset';           // normalize
+@import 'base/typography';      // typography
 
 // layout
-@import 'layout/layouts';
+@import 'layout/layouts';       // layouts
 
 // module
-@import 'module/links';
-@import 'module/button';
-@import 'module/lists';
-@import 'module/forms';
-@import 'module/hamburger';
-@import 'module/navigation';
-@import 'module/hero';
-@import 'module/cards';
-@import 'module/screenreader';
-@import 'module/osano-cookie';
-@import 'module/helpers';
+@import 'module/links';         // links
+@import 'module/button';        // buttons
+@import 'module/lists';         // lists
+@import 'module/forms';         // forms
+@import 'module/hamburger';     // hamburger main menu
+@import 'module/navigation';    // main navigation
+@import 'module/hero';          // hero images
+@import 'module/cards';         // cards component
+@import 'module/screenreader';  // screenreader link with wordpress compatible
+@import 'module/osano-cookie';  // cookie consent
+@import 'module/helpers';       // small helpers
 
 // shame and vendors
-@import 'shame/vendor';
+@import 'shame/vendor';         // everything, thats not programmed by own
