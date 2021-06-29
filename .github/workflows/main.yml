@@ -17,13 +17,13 @@ jobs:
             submodules: true
 
       - name: Make destination directory for compiled CSS
-        run: mkdir -vp /tmp/repo-name/assets/css
+        run: mkdir -vp /css
 
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.4.3
         with:
           source: _scss/main.scss
-          destination: /tmp/repo-name/assets/css/main.css
+          destination: /css/main.css
 
       - name: Checkout destination Git branch
         uses: actions/checkout@v2
@@ -32,13 +32,13 @@ jobs:
             fetch-depth: 1
 
       - name: Move compiled CSS to path within pr-pages branch
-        run: mv /tmp/repo-name/assets/css assets/
+        run: mv /css
 
       - name: Add and Commit changes to pr-pages branch
         run: |
           git config --local user.email 'action@github.com'
           git config --local user.name 'GitHub Action'
-          git add assets/css/*
+          git add css/*
           git commit -m 'Updates compiled CSS files'
 
       - name: Push changes
