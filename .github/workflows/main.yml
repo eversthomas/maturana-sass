@@ -17,19 +17,22 @@ jobs:
             submodules: true
 
       - name: Make destination directory for compiled CSS
-        run: mkdir -vp /maturana-sass/css
+        run: mkdir -vp /tmp/maturana-sass/css
 
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.4.3
         with:
           source: _scss/main.scss
-          destination: /maturana-sass/css/main.css
+          destination: /tmp/maturana-sass/css/main.css
 
       - name: Checkout destination Git branch
         uses: actions/checkout@v2
         with:
             ref: pr-pages
             fetch-depth: 1
+
+      - name: Move compiled CSS to path within pr-pages branch
+        run: mv /tmp/maturana-sass/css css/
 
       - name: Add and Commit changes to pr-pages branch
         run: |
