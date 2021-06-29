@@ -35,30 +35,37 @@ $sizes: (
 */
 
 $colors: (
-	// base colors
-	dark: #444444,
-	light: #eeeeee,
-	colored: #f39c12,
-	colored-contrast: #ecf0f1,
-	body-background: #ffffff,
-	font: #444444,
+  // base colors
+  black: #444444,
+  white: #fff,
+  gray: #eeeeee,
+  darkgrey: #737373,
+  blue: #3498db,
+  darkblue: #2980b9,
+  red: #e74c3c,
+  darkred: #c0392b,
+  green: #2ecc71,
+  darkgreen: #27ae60,
+  yellow: #f1c40f,
+  orange: #e67e22,
+  transparent: transparent,
+  
+  // link colors
+  link-color: #2980b9,			// link color
+  link-hover: #27ae60,			// hover color
+  // hamburger
+  h-bg: transparent,			// hamburger background
+  o-color: #37474f,			// open color
+  c-color: #37474f,			// close color
+  
+  // navigation-bar
+  nav-mobile-bg: #37474f,		// mobile navigation background color
+  nav-mobile-link: #ffffff,	// mobile navigation link color
+  nav-mobile-hover: #eeeeee,	// mobile navigation hover color
 	
-	// navigation-bar
-	h-bg: transparent,			// hamburger background
-	o-color: #37474f,			// open color
-	c-color: #37474f,			// close color
-	
-	nav-bg: #ffffff,			// navigation-bar background
-	nav-link: #444444,			// navigation link color
-	nav-hover: #000000,			// navigation link hover color
-	
-	nav-mobile-bg: #37474f,		// mobile navigation background color
-	nav-mobile-link: #ffffff,	// mobile navigation link color
-	nav-mobile-hover: #eeeeee,	// mobile navigation hover color
-	
-	// link colors
-	link-color: blue,			// link color
-	link-hover: green,			// hover color
+  nav-bg: #ffffff,			// navigation-bar background
+  nav-link: #444444,			// navigation link color
+  nav-hover: #000000,			// navigation link hover color
 );
 
 // _functions.scss
