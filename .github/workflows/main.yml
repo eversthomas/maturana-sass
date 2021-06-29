@@ -17,22 +17,21 @@ jobs:
             submodules: true
 
       - name: Make destination directory for compiled CSS
-        run: mkdir -vp /css
+        run: mkdir -vp /tmp/maturana-sass/css
 
-      - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.4.3
-        with:
-          source: _scss/main.scss
-          destination: /css/main.css
-
+      - name: Compile main.css from main.scss
+          uses: gha-utilities/sass-build@v0.4.3
+          with:
+            source: |
+              _scss/main.scss
+            destination: |
+              /tmp/maturana-sass/css/main.css
+              
       - name: Checkout destination Git branch
         uses: actions/checkout@v2
         with:
             ref: pr-pages
             fetch-depth: 1
-
-      - name: Move compiled CSS to path within pr-pages branch
-        run: mv /css
 
       - name: Add and Commit changes to pr-pages branch
         run: |
@@ -47,10 +46,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: pr-pages
 
-      - name: Compile main.css from main.scss
-          uses: gha-utilities/sass-build@v0.4.3
-          with:
-            source: |
-              _scss/main.scss
-            destination: |
-              main.css
+      - name: Initialize Pull Request
+        uses: gha-utilities/init-pull-request@v0.0.4
+        with:
+          pull_request_token: ${{ secrets.GITHUB_TOKEN }}
+          head: pr-pages
+          base: gh-pages
+          title: 'Updates site files from latest Actions build'
+          body: >
+            Perhaps a multi-line description
+            about latest features and such.
