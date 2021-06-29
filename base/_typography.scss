@@ -53,14 +53,14 @@ hr {
 }
 
 blockquote {
-  background: #f9f9f9;
+  background: color(transparent);
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   
   &:before {
-    color: #ccc;
+    color: color(darkred);
     content: open-quote;
     font-size: 4em;
     line-height: 0.1em;
@@ -109,6 +109,6 @@ pre {
 code {
   padding: 2px;
   white-space: nowrap;
-  background: #E7E7E7;
+  background: color(grey);
   font-family: "Consolas", "Monaco", "Menlo", monospace;
 }
